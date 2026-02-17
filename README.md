@@ -1,4 +1,4 @@
-# Bitcrusher Guitar Pedal (Teensy 4.0)
+# FlexFx Guitar Pedal (Teensy 4.0)
 
 Bring-up repo for a Teensy 4.0 + Teensy Audio Shield (SGTL5000) guitar pedal project.
 Goal: verify clean audio passthrough first, then add DSP (bitcrush, etc).
