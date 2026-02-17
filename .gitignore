@@ -1,1 +1,6 @@
 .venv/*
+**/.pio/
+**/.vscode/
+tests/lab/.venv/
+tests/lab/results/
+tests/lab/configs/instruments.json

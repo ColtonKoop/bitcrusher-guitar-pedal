@@ -1,0 +1,6 @@
+[submodule "submods/third_party/labio"]
+	path = submods/third_party/labio
+	url = https://github.com/ColtonKoop/labio.git
+[submodule "submods/labio"]
+	path = submods/labio
+	url = https://github.com/ColtonKoop/labio.git
