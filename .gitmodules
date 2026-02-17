@@ -4,3 +4,6 @@
 [submodule "submods/labio"]
 	path = submods/labio
 	url = https://github.com/ColtonKoop/labio.git
+[submodule "submods/Audio"]
+	path = submods/Audio
+	url = https://github.com/PaulStoffregen/Audio.git
