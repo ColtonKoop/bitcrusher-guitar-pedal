@@ -12,6 +12,6 @@ import pymupdf.layout  # required by pymupdf4llm for layout-aware parsing
 import pymupdf4llm
 
 # Point this at the PDF you want to convert.
-PDF_PATH = Path("/home/c0lt0n/Projects/bitcrusher-guitar-pedal/docs/teensy/IMXRT1060RM_rev3_annotations.pdf")
+PDF_PATH = Path("/home/c0lt0n/Projects/flexfx-pedal/docs/audio-shield/teensy_audio_tutorial.pdf")
 md = pymupdf4llm.to_markdown(str(PDF_PATH))
 PDF_PATH.with_suffix(".md").write_bytes(md.encode("utf-8"))

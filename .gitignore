@@ -4,3 +4,5 @@
 tests/lab/.venv/
 tests/lab/results/
 tests/lab/configs/instruments.json
+__pycache__/
+docs/.venv
