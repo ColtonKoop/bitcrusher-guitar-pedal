@@ -7,3 +7,6 @@
 [submodule "submods/Audio"]
 	path = submods/Audio
 	url = https://github.com/PaulStoffregen/Audio.git
+[submodule "submods/KiCad-DesignRules"]
+	path = submods/KiCad-DesignRules
+	url = https://github.com/labtroll/KiCad-DesignRules.git
