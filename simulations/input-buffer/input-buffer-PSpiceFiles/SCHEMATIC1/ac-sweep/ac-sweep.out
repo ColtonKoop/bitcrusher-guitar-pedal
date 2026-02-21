@@ -1,0 +1,449 @@
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ac-sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100k
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INPUT-BUFFER
+R_R_VREF_TOP         VREF VCC  47k TC=0,0 
+C_C_INPUT_COUPLING         VIN VIN_BIASED  100n  TC=0,0 
+R_R_VREF_BOTTOM         0 VREF  47k TC=0,0 
+R_R_FEEDBACK         OUT_BIASED N00484  33k TC=0,0 
+R_R_GAIN_SET         N00484 N00893  10k TC=0,0 
+C_C_OUTPUT_COUPLING         OUT_BIASED OUT  4.7u  TC=0,0 
+C_C_LF_SHAPING         0 N00893  4.7u  TC=0,0 
+V_VCC         VCC 0 9Vdc
+R_R_OUT_BLEED         OUT 0  10k TC=0,0 
+R_R_IN         VREF VIN_BIASED  1M TC=0,0 
+X_U1         VIN_BIASED N00484 VCC 0 OUT_BIASED TL07XH_TL08XH
+V_V1         VIN 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING ac-sweep.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Xe_n.DVN   
+          IS  100.000000E-18 
+          KF   10.000000E-12 
+
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.R_RES_1    X_U1.R_RES_2    X_U1.R_RES_3    X_U1.R_RES_4    
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_5    X_U1.R_RES_6    X_U1.R_RES_7    X_U1.R_RES_8    
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_9    X_U1.R_RES_10   X_U1.R_RES_11   X_U1.R_RES_12   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_13   X_U1.R_RES_14   X_U1.R_RES_15   X_U1.R_RES_16   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_17   X_U1.R_RES_18   X_U1.R_RES_19   X_U1.R_RES_20   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_21   X_U1.R_RES_22   X_U1.R_RES_23   X_U1.R_RES_24   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_25   X_U1.R_RES_26   X_U1.R_RES_27   X_U1.R_RES_28   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_29   X_U1.R_RES_30   X_U1.R_RES_31   X_U1.R_RES_32   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_33   X_U1.R_RES_34   X_U1.R_RES_35   X_U1.R_RES_36   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_37   X_U1.R_RES_38   X_U1.R_RES_39   X_U1.R_RES_40   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_41   X_U1.R_RES_42   X_U1.R_RES_43   X_U1.R_RES_44   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_45   X_U1.R_RES_46   X_U1.R_RES_47   X_U1.R_RES_48   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_49   X_U1.R_RES_50   X_U1.R_RES_51   X_U1.R_RES_52   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_53   X_U1.R_RES_54   X_U1.R_RES_55   X_U1.R_RES_56   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_57   X_U1.R_RES_58   X_U1.R_RES_59   X_U1.R_RES_60   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_61   X_U1.R_RES_62   X_U1.R_RES_63   X_U1.R_RES_64   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_65   X_U1.R_RES_66   X_U1.R_RES_67   X_U1.R_RES_68   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_69   X_U1.R_RES_70   X_U1.R_RES_71   X_U1.R_RES_72   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_73   X_U1.R_RES_74   X_U1.R_RES_75   X_U1.R_RES_76   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_77   X_U1.R_RES_78   X_U1.R_RES_79   X_U1.R_RES_80   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_81   X_U1.R_RES_82   X_U1.R_RES_83   X_U1.R_RES_84   
+  T_Measured   27              27              27              27            
+   T_Current -273.15         -273.15         -273.15         -273.15         
+           R    1               1               1               1            
+
+
+               X_U1.R_RES_85   X_U1.R_RES_86   X_U1.R_RES_87   
+  T_Measured   27              27              27            
+   T_Current -273.15         -273.15         -273.15         
+           R    1               1               1            
+
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.S_VSWITCH_1 
+         RON  100            
+        ROFF    1.000000E+12 
+         VON    1            
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_2 
+         RON  100            
+        ROFF    1.000000E+12 
+         VON    1            
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_3 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_4 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .1          
+
+
+               X_U1.S_VSWITCH_5 
+         RON     .01         
+        ROFF    1.000000E+09 
+         VON     .01         
+        VOFF    0            
+
+
+               X_U1.S_VSWITCH_6 
+         RON     .01         
+        ROFF    1.000000E+09 
+         VON     .01         
+        VOFF    0            
+
+
+               X_U1.S_VSWITCH_7 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U1.S_VSWITCH_8 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U1.S_VSWITCH_9 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (  VCC)    9.0000  (  VIN)    0.0000  ( VREF)    4.5000      
+
+(N00484)    4.4905 (N00893)    4.4905 (X_U1.21)    4.4476                       
+
+(X_U1.22)    3.9232                   (X_U1.23)    4.4480                       
+
+(X_U1.24)    4.4480                   (X_U1.25)    4.4480                       
+
+(X_U1.26)    4.4783                   (X_U1.27)    4.5000                       
+
+(X_U1.28)    4.4874                   (X_U1.29)    4.4874                       
+
+(X_U1.30)    4.5000                   (X_U1.31)    4.4740                       
+
+(X_U1.32)    4.4892                   (X_U1.33)    4.4892                       
+
+(X_U1.34)    4.4892                   (X_U1.35)   71.5000                       
+
+(X_U1.36)  -62.5000                   (X_U1.37)    4.4892                       
+
+(X_U1.38)    4.5000                   (X_U1.39)    4.5000                       
+
+(X_U1.40)    4.5000                   (X_U1.41)    4.5000                       
+
+(X_U1.42)    4.5015                   (X_U1.43)    6.9219                       
+
+(X_U1.44)    4.4874                   (X_U1.45)    4.5000                       
+
+(X_U1.46)    4.5000                   (X_U1.47)    4.5000                       
+
+(X_U1.48)    4.5000                   (X_U1.49)    4.5000                       
+
+(X_U1.50)   10.4890                   (X_U1.51)   10.4890                       
+
+(X_U1.52)   -1.5108                   (X_U1.53)   -1.5108                       
+
+(X_U1.54)    4.3951                   (X_U1.55)    4.5000                       
+
+(X_U1.56)    4.4905                   (X_U1.57)    4.4905                       
+
+(X_U1.58)    4.4879                   (X_U1.59)    4.3872                       
+
+(X_U1.60)    4.4905                   (X_U1.61)    4.4985                       
+
+(X_U1.62)    2.0781                   (X_U1.63)   29.5000                       
+
+(X_U1.64)  -20.5000                   (X_U1.65)    4.5000                       
+
+(X_U1.66)    4.5000                   (X_U1.67)   10.4890                       
+
+(X_U1.68)   -1.5108                   (X_U1.69)    4.5000                       
+
+(X_U1.70)    4.5000                   (X_U1.71)    8.9900                       
+
+(X_U1.72)     .0100                   (X_U1.73)    8.9900                       
+
+(X_U1.74)     .0100                   (X_U1.75)    4.5000                       
+
+(X_U1.76)    4.5000                   (X_U1.77)    4.5000                       
+
+(X_U1.78)    4.5000                   (X_U1.79)    4.5000                       
+
+(X_U1.80)    4.5000                   (X_U1.81)    4.4905                       
+
+(X_U1.82)    4.4892                   (X_U1.83)    4.4905                       
+
+(X_U1.84)    1.0000                   (X_U1.85)    9.3000                       
+
+(X_U1.86)    4.4905                   (X_U1.87)    4.5000                       
+
+(X_U1.88) 4.508E-06                   (X_U1.89)    9.0000                       
+
+(X_U1.90)    4.4874                   (X_U1.MID)    4.5000                      
+
+(X_U1.ESDn)    4.4905                 (X_U1.ESDp)    4.5000                     
+
+(X_U1.VCLP)    4.4892                 (OUT_BIASED)    4.4905                    
+
+(VIN_BIASED)    4.5000                (X_U1.CLAMP)    4.4892                    
+
+(X_U1.SW_OL)    4.5000                (X_U1.VCC_B)    9.0000                    
+
+(X_U1.VEE_B) 4.503E-06                (X_U1.VIMON)    4.5000                    
+
+(X_U1.VOUT_S)    4.4905               (X_U1.VSENSE)    4.4892                   
+
+(X_U1.Xe_n.3)    0.0000               (X_U1.Xe_n.4)    0.0000                   
+
+(X_U1.Xe_n.5)    0.0000               (X_U1.Xe_n.6)    0.0000                   
+
+(X_U1.Xe_n.7)     .8338               (X_U1.Xe_n.8)     .8338                   
+
+(X_U1.VCC_CLP)    8.9900              (X_U1.VEE_CLP)     .0100                  
+
+(X_U1.Xi_nn.3)    0.0000              (X_U1.Xi_nn.5)    0.0000                  
+
+(X_U1.Xi_np.3)    0.0000              (X_U1.Xi_np.5)    0.0000                  
+
+(X_U1.CL_CLAMP)    4.4892             (X_U1.CLAW_CLAMP)    4.4892               
+
+(X_U1.XVOS_VS_VCM.1)    4.4874        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.033E-03
+    V_V1         0.000E+00
+    X_U1.V_GRp  -6.700E-08
+    X_U1.V_GRn   6.700E-08
+    X_U1.V_ISCp  -2.500E-08
+    X_U1.V_ISCn   2.500E-08
+    X_U1.V_ORn   0.000E+00
+    X_U1.V11     6.006E-09
+    X_U1.V_ORp   0.000E+00
+    X_U1.V12    -6.006E-09
+    X_U1.V4     -2.636E-13
+    X_U1.VCM_MIN   3.500E-09
+    X_U1.VCM_MAX  -4.800E-09
+
+    TOTAL POWER DISSIPATION   9.31E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/21/26 00:35:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\input-buffer\input-buffer-PSpiceFiles\SCHEMATIC1\ac-sw
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .41
+
