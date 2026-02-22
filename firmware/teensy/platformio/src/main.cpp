@@ -50,6 +50,7 @@ void setup() {
 
   sgtl5000.enable();
   sgtl5000.volume(0.5);
+  sgtl5000.lineInLevel(5); // 1.33 Vpp
 
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN, OUTPUT);
