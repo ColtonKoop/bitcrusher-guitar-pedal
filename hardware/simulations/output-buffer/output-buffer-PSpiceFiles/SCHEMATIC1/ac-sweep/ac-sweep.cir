@@ -1,6 +1,6 @@
-** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\transient.sim ] 
+** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-sweep.sim ] 
 
-** Creating circuit file "transient.cir" 
+** Creating circuit file "ac-sweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -11,7 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 500ms 0 10u 
+.AC DEC 10 1 100000
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 

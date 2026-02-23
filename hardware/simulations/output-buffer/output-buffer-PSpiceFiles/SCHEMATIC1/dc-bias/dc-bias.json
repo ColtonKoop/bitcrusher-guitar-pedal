@@ -1,0 +1,1 @@
+{"TimeStamp":"Sun Feb 22 17:38:15 2026\n","Circuits":{"ExitCode":"0","TraceCount":"41","Mode":"SPICE","Type":"TIFullMode","Models":[{"ModelName":"X_U1.Xe_n.DVN","FileName":"c:\\cds_spb_home\\cdssetup\\psptilibdir\\tl07xh_tl08xh.lib","ModelType":".model","DeviceType":"d","Source":"FROM_INC","isLibSigned":"true","isAllowed":"true"}]}}

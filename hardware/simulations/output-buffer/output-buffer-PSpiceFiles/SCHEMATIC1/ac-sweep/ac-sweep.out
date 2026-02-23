@@ -1,7 +1,7 @@
 
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,7 +12,7 @@
 
 
 
-** Creating circuit file "transient.cir" 
+** Creating circuit file "ac-sweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -23,7 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 500ms 0 10u 
+.AC DEC 10 1 100000
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -32,32 +32,31 @@
 
 
 **** INCLUDING SCHEMATIC1.net ****
-* source INPUT-BUFFER
-R_R_VREF_TOP         VREF VCC  47k TC=0,0 
-C_C_INPUT_COUPLING         VIN VIN_BIASED  100n  TC=0,0 
-R_R_VREF_BOTTOM         0 VREF  47k TC=0,0 
-R_R_FEEDBACK         OUT_BIASED N00484  33k TC=0,0 
-R_R_GAIN_SET         N00484 N05183  10k TC=0,0 
-C_C_OUTPUT_COUPLING         OUT_BIASED N00759  4.7u  TC=0,0 
-C_C_LF_SHAPING         0 N05183  4.7u  TC=0,0 
-C_C_VREF_FILTER         0 VREF  10u  TC=0,0 
+* source OUTPUT-BUFFER
+X_U1         N00721 N00725 VCC 0 N00725 TL07XH_TL08XH
 V_VCC         VCC 0 9Vdc
-R_R_OUT_BLEED         N00759 0  100k TC=0,0 
-R_R_IN         VREF VIN_BIASED  1MEG TC=0,0 
-X_U1         VIN_BIASED N00484 VCC 0 OUT_BIASED TL07XH_TL08XH
-V_V1         VIN 0  AC 1
-+SIN 0 100mV 1000 0 0 0
-R_R_OUT_R         N00759 N06210  330 TC=0,0 
-R_R_LOAD_R         0 N06210  10k TC=0,0 
-R_R_OUT_L         N00759 N06318  330 TC=0,0 
-R_R_LOAD_R1         0 N06318  10k TC=0,0 
+V_VIN         VIN 0  AC 1
++SIN 0 500mV 440 0 0 0
+R_R_VREF_TOP         N00534 VCC  47k TC=0,0 
+R_R_VREF_BOTTOM         0 N00534  47k TC=0,0 
+C_C_VREF_FILTER         0 N00534  10u  TC=0,0 
+R_R_VREF_IN         N00534 N00721  1MEG TC=0,0 
+C_C_OUT_COUPLING         N00725 N01303  4.7u  TC=0,0 
+C_C_IN_COUPLING         N00721 N00958  2.2u  TC=0,0 
+R_R_VIN_TOP         N00958 VIN  47k TC=0,0 
+R_R_VIN_BOTTOM         0 N00958  47k TC=0,0 
+R_R_OUT_BLEED         0 N01303  100k TC=0,0 
+R_R_OUT         N01303 N02047  330 TC=0,0 
+R_R_LOAD         0 N02047  100k TC=0,0 
 
-**** RESUMING transient.cir ****
+**** RESUMING ac-sweep.cir ****
 .END
-
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
  ****     Diode MODEL PARAMETERS
@@ -73,9 +72,9 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
           KF   10.000000E-12 
 
 
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
  ****     Resistor MODEL PARAMETERS
@@ -218,9 +217,9 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
            R    1               1               1            
 
 
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -294,12 +293,12 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
         VOFF     .45         
 
 
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
 
 ******************************************************************************
@@ -309,9 +308,9 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  VCC)    9.0000  (  VIN)    0.0000  ( VREF)    4.5000  (N00484)    4.4905     
+(  VCC)    9.0000  (  VIN)    0.0000  (N00534)    4.5000 (N00721)    4.5000     
 
-(N00759)    0.0000 (N05183)    4.4905 (N06210)    0.0000 (N06318)    0.0000     
+(N00725)    4.4905 (N00958)    0.0000 (N01303)    0.0000 (N02047)    0.0000     
 
 (X_U1.21)    4.4476                   (X_U1.22)    3.9232                       
 
@@ -387,8 +386,6 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
 
 (X_U1.ESDp)    4.5000                 (X_U1.VCLP)    4.4892                     
 
-(OUT_BIASED)    4.4905                (VIN_BIASED)    4.5000                    
-
 (X_U1.CLAMP)    4.4892                (X_U1.SW_OL)    4.5000                    
 
 (X_U1.VCC_B)    9.0000                (X_U1.VEE_B) 4.503E-06                    
@@ -418,7 +415,7 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
     NAME         CURRENT
 
     V_VCC       -1.033E-03
-    V_V1         0.000E+00
+    V_VIN        0.000E+00
     X_U1.V_GRp  -6.700E-08
     X_U1.V_GRn   6.700E-08
     X_U1.V_ISCp  -2.500E-08
@@ -427,7 +424,7 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
     X_U1.V11     6.006E-09
     X_U1.V_ORp   0.000E+00
     X_U1.V12    -6.006E-09
-    X_U1.V4     -4.039E-13
+    X_U1.V4     -5.116E-13
     X_U1.VCM_MIN   3.500E-09
     X_U1.VCM_MAX  -4.800E-09
 
@@ -437,9 +434,9 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
 
           JOB CONCLUDED
 
-**** 02/22/26 18:01:57 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+**** 02/22/26 17:49:34 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-transient"  [ C:\Users\Colton Koop\Desktop\simulations\input-buffer\input-buffer-pspicefiles\schematic1\tran
+ ** Profile: "SCHEMATIC1-ac-sweep"  [ c:\users\colton koop\desktop\simulations\output-buffer\output-buffer-PSpiceFiles\SCHEMATIC1\ac-
 
 
  ****     JOB STATISTICS SUMMARY
@@ -449,5 +446,5 @@ R_R_LOAD_R1         0 N06318  10k TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       11.78
+  Total job time (using Solver 1)   =         .41
 
