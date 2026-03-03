@@ -39,8 +39,8 @@ void setup() {
   }
   Serial.println("Boot: wet/dry control ready");
 
-  bitcrusher1.bits(8);
-  bitcrusher1.sampleRate(12000);
+  bitcrusher1.bits(4);
+  bitcrusher1.sampleRate(4000);
 
   // init mixer
   mixer1.gain(0, 0.5); // wet
